@@ -43,6 +43,7 @@ stdenv.mkDerivation rec {
   installPhase = ''
     mkdir -p $out/{opt,bin}
 
+    rm share/teams/resources/app.asar.unpacked/node_modules/slimcore/bin/rect-overlay
     mv share/teams $out/opt/
     mv share $out/share
 
